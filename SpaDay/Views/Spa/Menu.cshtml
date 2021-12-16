@@ -10,17 +10,63 @@
 
 <h1>Fancy Spa</h1>
 <div id="clientProfile">
+    <h3>Client Profile</h3>
+    <h3>@ViewBag.name</h3>
 </div>
 <div id="servicesMenu">
-
+   
     <h5>Facial Treatments</h5>
-    <p>Your //TODO: pass the skintype value in here// skin type is best suited to the follow facial types:</p>
+    @*TODO: Pass the skintype value in here*@
+    <h6>Skin type is best suited to the follow facial types:</h6>
     
-    <ul>
-        //TODO: iterate through appropriate facial treatments
-    </ul>
+    @*TODO: iterate through appropriate facial treatments*@
+        @*ViewBag.appropriateFacials*@
+        @foreach (string facial in ViewBag.appropriateFacials)
+        {
+            <ul>
+                <li>•@facial</li>
+            </ul>
+        }
 
     <h5>Nail Services</h5>
-    // TODO: display a description for the nail service selected
-    
+    @*TODO: display a description for the nail service selected*@
+    @if (ViewBag.manipedi == "manicure")
+    {
+        <h6>
+            Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.
+        </h6>
+    }
+    else if (ViewBag.manipedi == "pedicure")
+    {
+        <h6>
+            Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!
+        </h6>
+    }
+    else if (ViewBag.manipedi == "both")
+    {
+        <h6>
+            Relax in pure luxury! Our massage chairs and experienced nail techs are here with the finest polish and shea butter cream! Our goal is to leave you feeling refreshed and like new!
+        </h6>
+    }
+    else
+    {
+        <h6>
+            No manicure/pedicure services selected for today.
+        </h6>
+    }
+    <div class="nail-colors">
+        <h5 class="nail-colors">Popular Nail Colors</h5>
+        <div class="column-6 project-1"></div>
+        <div class="column-6 project-2"></div>
+        <div class="column-6 project-3"></div>
+        <div class="column-6 project-4"></div>
+        <div class="column-6 project-5"></div>
+        <div class="column-6 project-6"></div>
+        <div class="column-6 project-7"></div>
+        <div class="column-6 project-8"></div>
+        <div class="column-6 project-9"></div>
+        <div class="column-6 project-10"></div>
+        <div class="column-6 project-11"></div>
+        <div class="column-6 project-12"></div>
+    </div>
 </div>

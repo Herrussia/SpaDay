@@ -69,3 +69,50 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+.nail-colors {
+    text-align: center;
+    color: black;
+}
+.column-6{
+    float: left;
+    width: 10%;
+    padding: 10px;
+    margin: 15px;
+    height: 25px;
+}
+.project-1 {
+    background-color: paleturquoise;
+}
+.project-2 {
+    background-color: palegreen;
+}
+.project-3 {
+    background-color: burlywood;
+}
+.project-4 {
+    background-color: lavenderblush;
+}
+.project-5 {
+    background-color: orangered;
+}
+.project-6 {
+    background-color: orange;
+}
+.project-7 {
+    background-color: darkgoldenrod;
+}
+.project-8 {
+    background-color: cadetblue;
+}
+.project-9 {
+    background-color: blanchedalmond;
+}
+.project-10 {
+    background-color: lightsteelblue;
+}
+.project-11 {
+    background-color: darkslategrey;
+}
+.project-12 {
+    background-color: darkgrey;
+}
